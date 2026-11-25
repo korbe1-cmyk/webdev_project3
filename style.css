@@ -1,0 +1,193 @@
+
+/* Style 1: Page background and typography */
+body {
+  background: linear-gradient(135deg, #e4edf5, #f8fafc);
+  font-family: Arial, sans-serif;
+  color: #304050;
+  line-height: 1.6;
+  width: 90%;
+  margin: 20px auto;
+  min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(120deg, #20394f, #526f86);
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #304b63;
+}
+
+/* Style 2: Main headings */
+h1 {
+  color: #304b63;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  border-bottom: 4px solid #6489a8;
+}
+
+/* Style 3: Section headings */
+body > h2 {
+  color: #526f86;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #9db4c5;
+  border-left: 5px solid #6489a8;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  margin-top: 30px;
+}
+
+/* Style 4: Paragraph text */
+body > p {
+  color: #404040;
+  font-size: 1rem;
+  line-height: 1.8;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Style 5: Images */
+body > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 20px auto;
+}
+
+/* Style 6: Fluid homepage layout */
+.fluid-page {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style 7: Fixed-width resume layout */
+.fixed-page {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style 8: Content lists */
+body > ul,
+body > ol {
+  padding: 20px 20px 20px 40px;
+  line-height: 1.8;
+  background-color: #ffffff;
+  border-left: 4px solid #6489a8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Style 9: Subheadings */
+body > h3 {
+  color: #304b63;
+  margin-bottom: 5px;
+}
+
+/* Style 10: Video */
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+/* Style 11: Google Map */
+#map {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style 12: Questions button */
+#questions-button {
+  background: linear-gradient(120deg, #304b63, #6489a8);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+#questions-button:hover {
+  transform: translateY(-2px);
+  background: #526f86;
+}
+
+/* Media Query 1: Tablet screens */
+@media screen and (min-width: 600px) {
+  .fluid-page {
+    width: 85%;
+  }
+
+  .fluid-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .fluid-page > p {
+    padding: 20px;
+  }
+
+  .fluid-page nav ul {
+    gap: 25px;
+  }
+}
+
+/* Media Query 2: Desktop screens */
+@media screen and (min-width: 1024px) {
+  .fluid-page {
+    width: 75%;
+  }
+
+  .fluid-page h1 {
+    font-size: 2.8rem;
+  }
+
+  .fluid-page > p {
+    padding: 25px;
+    font-size: 1.1rem;
+  }
+
+  .fluid-page nav ul {
+    gap: 40px;
+  }
+}
